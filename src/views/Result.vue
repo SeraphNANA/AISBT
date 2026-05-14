@@ -7,8 +7,8 @@ import { RotateCcw, Sparkles, Brain, Heart, Share2, Link2 } from 'lucide-vue-nex
 const router = useRouter()
 const quizStore = useQuizStore()
 
-// GitHub Pages部署后的URL（部署时替换）
-const SHARE_URL = 'https://your-username.github.io/aisbt/'
+// GitHub Pages部署后的URL
+const SHARE_URL = 'https://seraphnana.github.io/AISBTI/'
 
 const levelData = computed(() => quizStore.getLevelData())
 const personaData = computed(() => quizStore.getPersonaData())
