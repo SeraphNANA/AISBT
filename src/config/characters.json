@@ -1,0 +1,247 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "title": "门外小白",
+      "description": "对AI认知处于入门阶段",
+      "personas": [
+        {
+          "id": "L1_E",
+          "name": "纯小白",
+          "mbtiType": "E",
+          "outfit": "休闲T恤+耳机",
+          "expression": "好奇兴奋",
+          "image": "L1_E.png",
+          "aiAbilityDesc": "只知道拿AI聊天唠嗑，把豆包当网络闺蜜，完全不懂模型、提示词是什么，纯娱乐玩家。",
+          "personalityDesc": "天生大E人，逮住新鲜事物就爱凑热闹，不爱深究原理，主打一个开心就好。"
+        },
+        {
+          "id": "L1_I",
+          "name": "佛系小白",
+          "mbtiType": "I",
+          "outfit": "简约T恤",
+          "expression": "平静佛系",
+          "image": "L1_I.png",
+          "aiAbilityDesc": "听过AI大模型名号，但本能抗拒学习，明明能用AI偷懒，偏要自己硬肝，极度随缘。",
+          "personalityDesc": "I到骨子里的慢热佛系人，不爱跟风内卷，对新工具保持距离感。"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "入门萌新",
+      "description": "已初步了解AI基础知识",
+      "personas": [
+        {
+          "id": "L2_E",
+          "name": "好奇宝宝",
+          "mbtiType": "E",
+          "outfit": "卡通T恤+棒球帽+放大镜",
+          "expression": "好奇探索",
+          "image": "L2_E.png",
+          "aiAbilityDesc": "刚入门AI世界，什么都想试试，但用完就忘，从不总结经验。",
+          "personalityDesc": "热情洋溢的E人，对新鲜事物充满好奇，但三分钟热度。"
+        },
+        {
+          "id": "L2_I",
+          "name": "佛系萌新",
+          "mbtiType": "I",
+          "outfit": "宽松卫衣+咖啡杯",
+          "expression": "随缘淡定",
+          "image": "L2_I.png",
+          "aiAbilityDesc": "偶尔用AI帮忙，但从不深入研究，能用就行，不求甚解。",
+          "personalityDesc": "低调内敛的I人，不追求精通，够用就好。"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "title": "初级玩家",
+      "description": "能熟练使用多种AI工具",
+      "personas": [
+        {
+          "id": "L3_E",
+          "name": "活跃玩家",
+          "mbtiType": "E",
+          "outfit": "潮流卫衣+运动鞋+手机",
+          "expression": "热情分享",
+          "image": "L3_E.png",
+          "aiAbilityDesc": "熟练使用几个AI工具，乐于分享使用心得，社交圈里的AI小达人。",
+          "personalityDesc": "外向社交型，喜欢把好东西安利给朋友。"
+        },
+        {
+          "id": "L3_I",
+          "name": "低调玩家",
+          "mbtiType": "I",
+          "outfit": "简约衬衫+书本+手表",
+          "expression": "专注操作",
+          "image": "L3_I.png",
+          "aiAbilityDesc": "默默用AI提升效率，不声张不炫耀，闷声发大财型。",
+          "personalityDesc": "内向实干派，用结果说话。"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "title": "进阶用户",
+      "description": "深入理解AI原理",
+      "personas": [
+        {
+          "id": "L4_E",
+          "name": "社交达人",
+          "mbtiType": "E",
+          "outfit": "商务休闲西装+麦克风",
+          "expression": "自信演讲",
+          "image": "L4_E.png",
+          "aiAbilityDesc": "深度使用AI工具，经常在群里分享AI技巧，朋友圈的AI顾问。",
+          "personalityDesc": "热情外向，乐于助人，享受分享的快乐。"
+        },
+        {
+          "id": "L4_I",
+          "name": "隐形高手",
+          "mbtiType": "I",
+          "outfit": "深色外套+耳机+显示器",
+          "expression": "默默操作",
+          "image": "L4_I.png",
+          "aiAbilityDesc": "对AI有深入理解，但不爱张扬，默默用AI解决各种难题。",
+          "personalityDesc": "低调内敛，实力派选手。"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "title": "熟练操作者",
+      "description": "日常工作中深度使用AI",
+      "personas": [
+        {
+          "id": "L5_E",
+          "name": "效率达人",
+          "mbtiType": "E",
+          "outfit": "干练西装+计时器",
+          "expression": "高效自信",
+          "image": "L5_E.png",
+          "aiAbilityDesc": "AI已成为工作利器，各种工作流信手拈来，效率翻倍不是梦。",
+          "personalityDesc": "外向行动派，喜欢把事情做得又快又好。"
+        },
+        {
+          "id": "L5_I",
+          "name": "幕后高手",
+          "mbtiType": "I",
+          "outfit": "舒适毛衣+咖啡+任务清单",
+          "expression": "沉稳可靠",
+          "image": "L5_I.png",
+          "aiAbilityDesc": "用AI默默完成大量工作，从不邀功，团队里的隐形MVP。",
+          "personalityDesc": "内向稳重，用实力证明自己。"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "title": "深度用户",
+      "description": "理解模型原理",
+      "personas": [
+        {
+          "id": "L6_E",
+          "name": "前沿探索者",
+          "mbtiType": "E",
+          "outfit": "探险服+望远镜+背包",
+          "expression": "兴奋探索",
+          "image": "L6_E.png",
+          "aiAbilityDesc": "紧跟AI前沿动态，第一时间尝试新模型新功能，圈内消息灵通人士。",
+          "personalityDesc": "外向好奇，喜欢探索未知领域。"
+        },
+        {
+          "id": "L6_I",
+          "name": "深度研究员",
+          "mbtiType": "I",
+          "outfit": "学术马甲+笔记本+实验器材",
+          "expression": "专注研究",
+          "image": "L6_I.png",
+          "aiAbilityDesc": "深入理解模型原理，关注技术论文，有自己的独到见解。",
+          "personalityDesc": "内向思考型，喜欢深度钻研。"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "title": "专业玩家",
+      "description": "掌握Prompt Engineering",
+      "personas": [
+        {
+          "id": "L7_E",
+          "name": "AI布道者",
+          "mbtiType": "E",
+          "outfit": "演讲西装+麦克风+讲台",
+          "expression": "热情分享",
+          "image": "L7_E.png",
+          "aiAbilityDesc": "精通AI各领域，经常分享经验，带动身边人一起进步。",
+          "personalityDesc": "外向热情，乐于传播知识。"
+        },
+        {
+          "id": "L7_I",
+          "name": "独行专家",
+          "mbtiType": "I",
+          "outfit": "简约Polo+徽章+书籍",
+          "expression": "深藏不露",
+          "image": "L7_I.png",
+          "aiAbilityDesc": "AI技术深厚，但低调不张扬，关键时刻一鸣惊人。",
+          "personalityDesc": "内向深沉，实力说话。"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "title": "高阶工程师",
+      "description": "能做模型微调/部署",
+      "personas": [
+        {
+          "id": "L8_E",
+          "name": "行业先锋",
+          "mbtiType": "E",
+          "outfit": "创业家西装+商业计划书",
+          "expression": "自信引领",
+          "image": "L8_E.png",
+          "aiAbilityDesc": "具备AI项目落地经验，能带领团队完成复杂项目，行业内有影响力。",
+          "personalityDesc": "外向领导型，善于整合资源。"
+        },
+        {
+          "id": "L8_I",
+          "name": "技术大牛",
+          "mbtiType": "I",
+          "outfit": "工程师工装+服务器+工具",
+          "expression": "专注调试",
+          "image": "L8_I.png",
+          "aiAbilityDesc": "深入AI底层技术，能进行模型微调和部署，技术实力过硬。",
+          "personalityDesc": "内向专注，技术驱动。"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "title": "AI大神",
+      "description": "行业专家级别",
+      "personas": [
+        {
+          "id": "L9_E",
+          "name": "AI领袖",
+          "mbtiType": "E",
+          "outfit": "顶级西装+光环+权杖",
+          "expression": "王者风范",
+          "image": "L9_E.png",
+          "aiAbilityDesc": "行业顶尖水平，引领AI技术创新方向，影响力辐射全行业。",
+          "personalityDesc": "外向领袖气质，推动行业进步。"
+        },
+        {
+          "id": "L9_I",
+          "name": "隐世高人",
+          "mbtiType": "I",
+          "outfit": "禅意长袍+佛珠+莲花",
+          "expression": "超然淡定",
+          "image": "L9_I.png",
+          "aiAbilityDesc": "AI技术造诣极深，低调隐于市，但一出手就是王炸。",
+          "personalityDesc": "内向超然，境界已非凡人能及。"
+        }
+      ]
+    }
+  ]
+}
