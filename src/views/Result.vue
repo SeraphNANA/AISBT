@@ -8,7 +8,7 @@ const router = useRouter()
 const quizStore = useQuizStore()
 
 // GitHub Pages部署后的URL
-const SHARE_URL = 'https://seraphnana.github.io/AISBTI/'
+const SHARE_URL = 'https://seraphnana.github.io/AISBT/'
 
 const levelData = computed(() => quizStore.getLevelData())
 const personaData = computed(() => quizStore.getPersonaData())
@@ -78,7 +78,7 @@ const restart = () => {
 
 // 页面加载时执行动画
 onMounted(async () => {
-  await typeWriter('AI偷偷分析你的MBTI其实是...')
+  await typeWriter('AI偷偷分析你的MBTI其实是……')
   await new Promise(resolve => setTimeout(resolve, 800))
   showMbtiResult.value = true
   await new Promise(resolve => setTimeout(resolve, 500))
@@ -95,8 +95,8 @@ onMounted(async () => {
 <template>
   <div class="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 flex items-center justify-center p-4 relative overflow-hidden">
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
-      <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500/30 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+      <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
     </div>
     
@@ -187,47 +187,48 @@ onMounted(async () => {
           >
             <div class="flex items-center gap-2 mb-2">
               <Heart class="w-4 h-4 text-pink-400" />
-              <span class="text-sm font-medium text-pink-400">MBTI 性格联动解读</span>
+              <span class="text-sm font-medium text-pink-400">给你的贴心建议</span>
             </div>
-            <p class="text-slate-300 text-sm leading-relaxed">{{ personaData?.personalityDesc }}</p>
+            <p class="text-slate-300 text-sm leading-relaxed">{{ personaData?.suggestion }}</p>
           </div>
         </div>
         
-        <!-- 分享区域 -->
+        <!-- 分享给朋友 -->
         <div 
-          class="mb-6 p-4 bg-slate-800/30 rounded-xl border border-slate-700/30 transition-all duration-500"
-          :class="showRest ? 'opacity-100' : 'opacity-0'"
+          class="mb-6 p-4 bg-slate-800/30 rounded-2xl border border-slate-700/30 transition-all duration-500"
+          :class="showRest ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
         >
-          <div class="flex items-center gap-2 mb-3">
-            <Link2 class="w-4 h-4 text-slate-400" />
-            <span class="text-sm text-slate-400">分享给朋友</span>
-          </div>
-          <p class="text-slate-300 text-xs leading-relaxed mb-4">{{ shareText }}</p>
+          <h3 class="text-sm font-medium text-slate-300 mb-2 flex items-center gap-2">
+            <Link2 class="w-4 h-4" />
+            分享给朋友
+          </h3>
+          <p class="text-slate-400 text-sm mb-3">{{ shareText }}</p>
         </div>
         
         <div 
-          class="grid grid-cols-2 gap-3 transition-all duration-500"
-          :class="showRest ? 'opacity-100' : 'opacity-0'"
+          class="flex gap-4 transition-all duration-500"
+          :class="showRest ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
         >
           <button
             @click="shareResult"
-            class="flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white rounded-2xl transition-all"
+            class="flex-1 py-4 px-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold text-lg rounded-2xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/25 flex items-center justify-center gap-2"
           >
-            <Share2 class="w-4 h-4" />
+            <Share2 class="w-5 h-5" />
             分享
           </button>
+          
           <button
             @click="restart"
-            class="flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-2xl transition-all"
+            class="flex-1 py-4 px-6 bg-slate-700/50 hover:bg-slate-700 text-white font-semibold text-lg rounded-2xl transition-all duration-300 flex items-center justify-center gap-2"
           >
-            <RotateCcw class="w-4 h-4" />
+            <RotateCcw class="w-5 h-5" />
             再测一次
           </button>
         </div>
       </div>
       
       <p class="text-center text-slate-500 text-xs mt-4">
-        AISBT - AI 认知段位趣味测试
+        纯前端运行，不收集任何个人数据
       </p>
     </div>
   </div>
