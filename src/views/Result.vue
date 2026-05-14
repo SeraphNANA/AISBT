@@ -187,9 +187,9 @@ onMounted(async () => {
           >
             <div class="flex items-center gap-2 mb-2">
               <Heart class="w-4 h-4 text-pink-400" />
-              <span class="text-sm font-medium text-pink-400">给你的贴心建议</span>
+              <span class="text-sm font-medium text-pink-400">你的性格特点</span>
             </div>
-            <p class="text-slate-300 text-sm leading-relaxed">{{ personaData?.suggestion }}</p>
+            <p class="text-slate-300 text-sm leading-relaxed">{{ personaData?.personalityDesc }}</p>
           </div>
         </div>
         
