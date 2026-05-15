@@ -103,23 +103,6 @@ export const useQuizStore = defineStore('quiz', {
       this.generateQuestions()
     },
     
-    generateMbtiQuestions() {
-      const mbtiQuestions = questions.mbti as MbtiQuestion[]
-      const dimensions = ['IE', 'SN', 'TF', 'JP', 'comprehensive', 'fun']
-      
-      const selected: MbtiQuestion[] = []
-      
-      dimensions.forEach(dim => {
-        const pool = mbtiQuestions.filter(q => q.dimension === dim)
-        if (pool.length > 0) {
-          const shuffled = pool.sort(() => Math.random() - 0.5)
-          selected.push(shuffled[0])
-        }
-      })
-      
-      this.selectedMbtiQuestions = selected
-    },
-    
     calculateMbtiResult(): string {
       const counts: Record<string, number> = {
         'I': 0, 'E': 0,
@@ -132,11 +115,13 @@ export const useQuizStore = defineStore('quiz', {
         const answerIndex = this.answers[q.id]
         if (answerIndex !== undefined) {
           const mapping = q.mbtiMapping[answerIndex]
-          mapping.split('').forEach(c => {
-            if (counts[c]) {
-              counts[c]++
-            }
-          })
+          if (mapping && mapping.length >= 4) {
+            // 处理完整的4位类型，每个位置对应一个维度
+            if (counts[mapping[0]] !== undefined) counts[mapping[0]]++
+            if (counts[mapping[1]] !== undefined) counts[mapping[1]]++
+            if (counts[mapping[2]] !== undefined) counts[mapping[2]]++
+            if (counts[mapping[3]] !== undefined) counts[mapping[3]]++
+          }
         }
       })
       
@@ -152,15 +137,12 @@ export const useQuizStore = defineStore('quiz', {
     },
     
     generateQuestions() {
-      // 清空状态
       this.currentLevel = 1
       this.consecutiveCorrect = 0
       this.answeredInCurrentLevel = 0
       
-      // 基础题库配置
       const baseConfig: Record<number, { count: number; pool: Question[] }> = {}
       
-      // 构建每个等级的题库池
       const profQuestions = [...questions.professional] as Question[]
       for (let i = 1; i <= 9; i++) {
         baseConfig[i] = {
@@ -169,24 +151,18 @@ export const useQuizStore = defineStore('quiz', {
         }
       }
       
-      // 基础配置：L1-3/L2-3/L3-3/L4-2/L5-2/L6-2/L7-2/L8-1/L9-1
       const baseDistribution = {
         1: 3, 2: 3, 3: 3,
         4: 2, 5: 2, 6: 2, 7: 2,
         8: 1, 9: 1
       }
       
-      // 根据当前正确率动态调整
-      // 初始正确率设为0.5作为假设
       let adjustmentFactor = 1.0
       
-      // 基础题库：从每个等级随机选择
       const selectedProf: Question[] = []
       
-      // 特殊调整：如果当前等级题库不足，优先从相邻等级补充
       const adjustedDistribution = { ...baseDistribution }
       
-      // 选择专业题
       for (let level = 1; level <= 9; level++) {
         const count = adjustedDistribution[level]
         const pool = baseConfig[level].pool
@@ -195,11 +171,9 @@ export const useQuizStore = defineStore('quiz', {
           const shuffled = pool.sort(() => Math.random() - 0.5)
           selectedProf.push(...shuffled.slice(0, count))
         } else {
-          // 题库不足，从其他等级借用
           const needed = count - pool.length
           selectedProf.push(...pool)
           
-          // 从高等级借题
           for (let higherLevel = level + 1; higherLevel <= 9 && needed > 0; higherLevel++) {
             if (baseConfig[higherLevel].pool.length > baseDistribution[higherLevel]) {
               const extra = baseConfig[higherLevel].pool.sort(() => Math.random() - 0.5).slice(0, 1)
@@ -210,14 +184,20 @@ export const useQuizStore = defineStore('quiz', {
         }
       }
       
-      // 从30道趣味题中随机选6道
-      const funQuestions = ([...questions.fun] as Question[]).sort(() => Math.random() - 0.5).slice(0, 6)
+      const funQuestions = ([...questions.fun] as (Question & { mbtiMapping?: string[] })[]).sort(() => Math.random() - 0.5).slice(0, 6)
       
-      // 专业题按L1-L9顺序排列（由易到难）
       selectedProf.sort((a, b) => (a.level || 1) - (b.level || 1))
       
-      // 合并：专业题 + 趣味题
       this.selectedQuestions = [...selectedProf, ...funQuestions]
+      
+      this.selectedMbtiQuestions = funQuestions.map(q => ({
+        id: q.id,
+        dimension: 'fun',
+        question: q.question,
+        options: q.options,
+        mbtiMapping: q.mbtiMapping || [],
+        score: 0
+      }))
     },
     
     setAnswer(questionId: number, answerIndex: number) {
@@ -258,7 +238,6 @@ export const useQuizStore = defineStore('quiz', {
       
       this.totalScore = score
       
-      this.generateMbtiQuestions()
       this.calculateMbtiResult()
       
       const level = levels.levels.find(l => score >= l.minScore && score <= l.maxScore)

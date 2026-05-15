@@ -4,62 +4,62 @@
       "level": 1,
       "title": "门外小白",
       "minScore": 0,
-      "maxScore": 35,
+      "maxScore": 40,
       "professionalDesc": "对 AI 认知处于入门阶段，了解基本概念，但缺乏实际应用经验。建议从基础工具开始探索。"
     },
     {
       "level": 2,
       "title": "入门萌新",
-      "minScore": 36,
-      "maxScore": 65,
+      "minScore": 41,
+      "maxScore": 80,
       "professionalDesc": "已初步了解 AI 基础知识，会使用常见的 AI 工具，但深度应用能力有待提升。"
     },
     {
       "level": 3,
       "title": "初级玩家",
-      "minScore": 66,
-      "maxScore": 95,
+      "minScore": 81,
+      "maxScore": 110,
       "professionalDesc": "能熟练使用多种 AI 工具，了解基本原理，开始探索进阶功能。"
     },
     {
       "level": 4,
       "title": "进阶用户",
-      "minScore": 96,
-      "maxScore": 120,
+      "minScore": 111,
+      "maxScore": 135,
       "professionalDesc": "深入理解 AI 原理，能优化提示词，了解不同模型的特性和适用场景。"
     },
     {
       "level": 5,
       "title": "熟练操作者",
-      "minScore": 121,
-      "maxScore": 138,
+      "minScore": 136,
+      "maxScore": 155,
       "professionalDesc": "日常工作中深度使用 AI，掌握 Prompt Engineering 技巧，能解决复杂问题。"
     },
     {
       "level": 6,
       "title": "深度用户",
-      "minScore": 139,
-      "maxScore": 152,
+      "minScore": 156,
+      "maxScore": 169,
       "professionalDesc": "理解模型底层原理，能进行模型对比分析，关注 AI 前沿动态。"
     },
     {
       "level": 7,
       "title": "专业玩家",
-      "minScore": 153,
-      "maxScore": 163,
+      "minScore": 170,
+      "maxScore": 179,
       "professionalDesc": "精通 Prompt Engineering，能设计复杂工作流，具备 AI 项目落地经验。"
     },
     {
       "level": 8,
       "title": "高阶工程师",
-      "minScore": 164,
-      "maxScore": 172,
+      "minScore": 180,
+      "maxScore": 189,
       "professionalDesc": "具备模型微调、部署能力，深入理解 Transformer 架构，能开发 AI 应用。"
     },
     {
       "level": 9,
       "title": "AI 大神",
-      "minScore": 173,
+      "minScore": 190,
       "maxScore": 200,
       "professionalDesc": "行业专家级别，对 AI 技术有深刻理解，能引领技术创新和行业应用。"
     }

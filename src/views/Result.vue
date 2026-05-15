@@ -2,7 +2,8 @@
 import { computed, ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quiz'
-import { RotateCcw, Sparkles, Brain, Heart, Share2, Link2 } from 'lucide-vue-next'
+import { RotateCcw, Sparkles, Brain, Heart, Share2, Link2, ChevronDown, ChevronUp, Zap, AlertCircle } from 'lucide-vue-next'
+import mbtiDescriptions from '@/config/mbtiDescriptions.json'
 
 const router = useRouter()
 const quizStore = useQuizStore()
@@ -12,6 +13,16 @@ const SHARE_URL = 'https://seraphnana.github.io/AISBT/'
 
 const levelData = computed(() => quizStore.getLevelData())
 const personaData = computed(() => quizStore.getPersonaData())
+
+// 获取完整MBTI描述
+const currentMbtiType = computed(() => quizStore.detectedMbti)
+const mbtiInfo = computed(() => {
+  const type = currentMbtiType.value as keyof typeof mbtiDescriptions
+  return mbtiDescriptions[type] || null
+})
+
+// 是否展开MBTI描述
+const showMbtiDetail = ref(false)
 
 const characterImage = computed(() => {
   if (!personaData.value?.image) return null
@@ -44,12 +55,22 @@ const hasWebShare = computed(() => {
 
 // 生成分享文案
 const shareText = computed(() => {
-  return `🦞 我在 AISBT 测试中获得了：L${levelData.value?.level} ${levelData.value?.title}！
-人设称号：${personaData.value?.name}
-MBTI：${quizStore.detectedMbti}
-得分：${quizStore.totalScore}
-
-快来测测你的 AI 认知段位吧！${SHARE_URL}`
+  const userMbti = quizStore.mbti || '未选择'
+  const detectedMbti = quizStore.detectedMbti
+  const level = levelData.value?.level || 0
+  const title = levelData.value?.title || ''
+  const name = personaData.value?.name || ''
+  
+  let prefix = ''
+  if (userMbti === detectedMbti) {
+    prefix = `🦐瞎给我测的还挺准：【${userMbti}】`
+  } else {
+    prefix = `🦞我一个【${userMbti}】，在AISBT测试中居然被AI说成是「${detectedMbti}」🤣`
+  }
+  
+  return `${prefix}
+${userMbti !== detectedMbti ? '不过' : '居然'}我获得了：AI等级L${level} ${title}！ 虾送称号：${name}
+快来测测你的AI段位吧：${SHARE_URL}`
 })
 
 // 使用Web Share API分享（支持微信等）
@@ -168,6 +189,9 @@ onMounted(async () => {
               <span class="text-sm font-medium text-cyan-400">专业能力评级</span>
             </div>
             <p class="text-slate-300 text-sm leading-relaxed">{{ levelData?.professionalDesc }}</p>
+            <p v-if="personaData?.professionalDescAddition" class="text-cyan-300 text-sm leading-relaxed mt-2 font-medium">
+              {{ personaData?.professionalDescAddition }}
+            </p>
           </div>
           
           <div 
@@ -185,24 +209,58 @@ onMounted(async () => {
             class="bg-slate-800/50 rounded-2xl p-4 border border-slate-700/30 transition-all duration-500"
             :class="showBlock3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
           >
-            <div class="flex items-center gap-2 mb-2">
-              <Heart class="w-4 h-4 text-pink-400" />
-              <span class="text-sm font-medium text-pink-400">你的性格特点</span>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <Heart class="w-4 h-4 text-pink-400" />
+                <span class="text-sm font-medium text-pink-400">你的性格特点</span>
+              </div>
+              <button
+                v-if="mbtiInfo"
+                @click="showMbtiDetail = !showMbtiDetail"
+                class="text-xs text-pink-300 hover:text-pink-200 flex items-center gap-1 transition-colors"
+              >
+                {{ showMbtiDetail ? '收起' : '展开详情' }}
+                <ChevronDown v-if="!showMbtiDetail" class="w-3 h-3" />
+                <ChevronUp v-if="showMbtiDetail" class="w-3 h-3" />
+              </button>
             </div>
-            <p class="text-slate-300 text-sm leading-relaxed">{{ personaData?.personalityDesc }}</p>
+            
+            <div v-if="mbtiInfo">
+              <div class="mb-3">
+                <p class="text-pink-200 text-sm font-medium mb-1">{{ mbtiInfo.name }}（{{ mbtiInfo.percentage }}）</p>
+                <p class="text-slate-300 text-sm leading-relaxed">{{ mbtiInfo.description }}</p>
+              </div>
+              
+              <div v-if="showMbtiDetail" class="space-y-3 pt-3 border-t border-slate-700/30">
+                <div>
+                  <div class="flex items-center gap-2 mb-2">
+                    <Zap class="w-3 h-3 text-green-400" />
+                    <span class="text-xs font-medium text-green-400">AI学习优势</span>
+                  </div>
+                  <ul class="text-slate-300 text-sm leading-relaxed space-y-1">
+                    <li v-for="(adv, idx) in mbtiInfo.aiAdvantages" :key="idx" class="flex items-start gap-2">
+                      <span class="text-green-400 mt-1">•</span>
+                      <span>{{ adv }}</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <div class="flex items-center gap-2 mb-2">
+                    <AlertCircle class="w-3 h-3 text-amber-400" />
+                    <span class="text-xs font-medium text-amber-400">避坑建议</span>
+                  </div>
+                  <ul class="text-slate-300 text-sm leading-relaxed space-y-1">
+                    <li v-for="(warn, idx) in mbtiInfo.aiWarnings" :key="idx" class="flex items-start gap-2">
+                      <span class="text-amber-400 mt-1">•</span>
+                      <span>{{ warn }}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p v-else class="text-slate-300 text-sm leading-relaxed">{{ personaData?.personalityDesc }}</p>
           </div>
-        </div>
-        
-        <!-- 分享给朋友 -->
-        <div 
-          class="mb-6 p-4 bg-slate-800/30 rounded-2xl border border-slate-700/30 transition-all duration-500"
-          :class="showRest ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
-        >
-          <h3 class="text-sm font-medium text-slate-300 mb-2 flex items-center gap-2">
-            <Link2 class="w-4 h-4" />
-            分享给朋友
-          </h3>
-          <p class="text-slate-400 text-sm mb-3">{{ shareText }}</p>
         </div>
         
         <div 
@@ -219,10 +277,14 @@ onMounted(async () => {
           
           <button
             @click="restart"
-            class="flex-1 py-4 px-6 bg-slate-700/50 hover:bg-slate-700 text-white font-semibold text-lg rounded-2xl transition-all duration-300 flex items-center justify-center gap-2"
+            class="relative flex-1 py-4 px-6 overflow-hidden rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-slate-500/20"
           >
-            <RotateCcw class="w-5 h-5" />
-            再测一次
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-700 via-slate-600 to-slate-700 hover:from-slate-600 hover:via-slate-500 hover:to-slate-600 transition-all duration-300"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-700"></div>
+            <span class="relative flex items-center justify-center gap-2 text-white font-semibold text-lg">
+              <RotateCcw class="w-5 h-5" />
+              再测一次
+            </span>
           </button>
         </div>
       </div>

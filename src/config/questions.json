@@ -5,7 +5,7 @@
       "question": "以下哪个是当下最流行的大语言模型？",
       "options": ["Word", "GPT-5", "Excel", "Photoshop"],
       "answer": 1,
-      "score": 5,
+      "score": 10,
       "level": 1
     },
     {
@@ -13,7 +13,7 @@
       "question": "AI绘画工具Midjourney主要用于什么？",
       "options": ["编写代码", "生成图像", "数据分析", "视频剪辑"],
       "answer": 1,
-      "score": 5,
+      "score": 10,
       "level": 1
     },
     {
@@ -21,7 +21,7 @@
       "question": "用AI生成内容时，首先应该关注什么？",
       "options": ["版权归属", "生成速度", "文件大小", "颜色搭配"],
       "answer": 0,
-      "score": 5,
+      "score": 10,
       "level": 1
     },
     {
@@ -29,7 +29,7 @@
       "question": "以下哪个是国产大模型？",
       "options": ["Claude", "Llama", "Gemini", "文心一言"],
       "answer": 3,
-      "score": 5,
+      "score": 10,
       "level": 1
     },
     {
@@ -37,7 +37,7 @@
       "question": "ChatGPT的\"GPT\"是什么意思？",
       "options": ["图形处理技术", "生成式预训练", "加密协议", "云计算平台"],
       "answer": 1,
-      "score": 5,
+      "score": 10,
       "level": 1
     },
     {
@@ -45,7 +45,7 @@
       "question": "GPT中的\"Token\"是什么意思？",
       "options": ["一种加密货币", "编程语言", "文本的最小处理单位", "网络协议"],
       "answer": 2,
-      "score": 6,
+      "score": 12,
       "level": 2
     },
     {
@@ -53,7 +53,7 @@
       "question": "AI幻觉(Hallucination)指的是什么？",
       "options": ["视觉错误", "系统崩溃", "AI编造虚假信息", "AI看到幻影"],
       "answer": 2,
-      "score": 6,
+      "score": 12,
       "level": 2
     },
     {
@@ -61,7 +61,7 @@
       "question": "Prompt Engineering是什么？",
       "options": ["网络协议", "硬件技术", "数据库设计", "优化AI交互的技巧"],
       "answer": 3,
-      "score": 6,
+      "score": 12,
       "level": 2
     },
     {
@@ -69,7 +69,7 @@
       "question": "ChatGPT的上下文窗口指的是什么？",
       "options": ["显存", "网络带宽", "界面大小", "模型能记住的对话长度"],
       "answer": 3,
-      "score": 6,
+      "score": 12,
       "level": 2
     },
     {
@@ -77,7 +77,7 @@
       "question": "Stable Diffusion是什么类型的工具？",
       "options": ["视频播放器", "音乐软件", "办公软件", "开源AI绘画工具"],
       "answer": 3,
-      "score": 6,
+      "score": 12,
       "level": 2
     },
     {
@@ -85,7 +85,7 @@
       "question": "Liblib是什么平台？",
       "options": ["社交网络", "电商平台", "视频网站", "AI绘画模型分享平台"],
       "answer": 3,
-      "score": 6,
+      "score": 12,
       "level": 2
     },
     {
@@ -93,7 +93,7 @@
       "question": "AI助手中\"大模型\"的\"大\"主要指什么？",
       "options": ["体积大", "数据量大", "参数多", "价格贵"],
       "answer": 2,
-      "score": 6,
+      "score": 12,
       "level": 2
     },
     {
@@ -101,7 +101,7 @@
       "question": "Agent在AI领域指的是什么？",
       "options": ["数据库", "编程框架", "一种病毒", "能自主执行任务的智能体"],
       "answer": 3,
-      "score": 7,
+      "score": 10,
       "level": 3
     },
     {
@@ -109,7 +109,7 @@
       "question": "微调(Fine-tuning)是什么意思？",
       "options": ["优化网速", "修改系统", "调整硬件参数", "在预训练模型上进一步训练"],
       "answer": 3,
-      "score": 7,
+      "score": 10,
       "level": 3
     },
     {
@@ -117,7 +117,7 @@
       "question": "多模态AI是指什么？",
       "options": ["多用户系统", "多线程计算", "多个AI模型", "能处理多种类型数据的AI"],
       "answer": 3,
-      "score": 7,
+      "score": 10,
       "level": 3
     },
     {
@@ -125,7 +125,7 @@
       "question": "GitHub Copilot是什么工具？",
       "options": ["PowerPoint", "Word", "Excel", "AI代码助手"],
       "answer": 3,
-      "score": 7,
+      "score": 10,
       "level": 3
     },
     {
@@ -133,7 +133,7 @@
       "question": "API是什么？",
       "options": ["操作系统", "编程语言", "数据库", "应用程序接口"],
       "answer": 3,
-      "score": 7,
+      "score": 10,
       "level": 3
     },
     {
@@ -141,7 +141,7 @@
       "question": "RAG是什么的缩写？",
       "options": ["机器人助手", "随机访问生成器", "快速AI增长", "检索增强生成"],
       "answer": 3,
-      "score": 7,
+      "score": 10,
       "level": 3
     },
     {
@@ -149,7 +149,7 @@
       "question": "Transformer架构的核心创新是什么？",
       "options": ["自注意力机制", "更大硬盘", "更快CPU", "更好显示器"],
       "answer": 0,
-      "score": 7,
+      "score": 10,
       "level": 3
     },
     {
@@ -157,7 +157,7 @@
       "question": "Temperature参数控制什么？",
       "options": ["网络延迟", "内存使用", "CPU温度", "输出随机性"],
       "answer": 3,
-      "score": 8,
+      "score": 12,
       "level": 4
     },
     {
@@ -165,7 +165,7 @@
       "question": "LangChain主要用于什么？",
       "options": ["游戏引擎", "AI应用开发框架", "数据库管理", "图像处理"],
       "answer": 1,
-      "score": 8,
+      "score": 12,
       "level": 4
     },
     {
@@ -173,7 +173,7 @@
       "question": "Dify是什么类型的平台？",
       "options": ["视频平台", "AI应用开发与部署平台", "社交软件", "办公套件"],
       "answer": 1,
-      "score": 8,
+      "score": 12,
       "level": 4
     },
     {
@@ -181,7 +181,7 @@
       "question": "Docker主要用于什么？",
       "options": ["文档编辑", "容器化部署", "图像处理", "音乐播放"],
       "answer": 1,
-      "score": 8,
+      "score": 12,
       "level": 4
     },
     {
@@ -189,7 +189,7 @@
       "question": "CLI是什么的缩写？",
       "options": ["中央处理器", "命令行界面", "图形用户界面", "应用程序接口"],
       "answer": 1,
-      "score": 8,
+      "score": 12,
       "level": 4
     },
     {
@@ -197,7 +197,7 @@
       "question": "Vibe Coding指的是什么？",
       "options": ["编程音乐", "沉浸式编程体验", "代码审查", "版本控制"],
       "answer": 1,
-      "score": 8,
+      "score": 12,
       "level": 4
     },
     {
@@ -205,7 +205,7 @@
       "question": "Embedding指的是什么？",
       "options": ["嵌入技术", "图像处理", "网络协议", "数据库操作"],
       "answer": 0,
-      "score": 9,
+      "score": 12,
       "level": 5
     },
     {
@@ -213,7 +213,7 @@
       "question": "向量数据库主要用于什么？",
       "options": ["存储图片", "RAG检索增强", "视频流", "音乐播放"],
       "answer": 1,
-      "score": 9,
+      "score": 12,
       "level": 5
     },
     {
@@ -221,7 +221,7 @@
       "question": "Claude Code主要用于什么？",
       "options": ["代码生成与调试", "文档编辑", "数据分析", "图像识别"],
       "answer": 0,
-      "score": 9,
+      "score": 12,
       "level": 5
     },
     {
@@ -229,7 +229,7 @@
       "question": "OpenCLAW是什么类型的工具？",
       "options": ["音频处理", "AI工作流编排工具", "视频编辑", "办公软件"],
       "answer": 1,
-      "score": 9,
+      "score": 12,
       "level": 5
     },
     {
@@ -237,7 +237,7 @@
       "question": "Hermes Agent是什么？",
       "options": ["邮件客户端", "开源AI智能体框架", "数据库", "浏览器"],
       "answer": 1,
-      "score": 9,
+      "score": 12,
       "level": 5
     },
     {
@@ -285,7 +285,7 @@
       "question": "Function Calling是什么能力？",
       "options": ["调用外部工具", "函数定义解析", "代码自动执行", "批量文件操作"],
       "answer": 0,
-      "score": 11,
+      "score": 7,
       "level": 7
     },
     {
@@ -293,7 +293,7 @@
       "question": "Harness Engineering指的是什么？",
       "options": ["AI应用工程化", "机械自动化", "电气系统控制", "软件工程最佳实践"],
       "answer": 0,
-      "score": 11,
+      "score": 7,
       "level": 7
     },
     {
@@ -301,7 +301,7 @@
       "question": "Agent Swarm指的是什么？",
       "options": ["多Agent协作", "单个高级Agent", "智能体集群部署", "Agent生命周期管理"],
       "answer": 0,
-      "score": 11,
+      "score": 7,
       "level": 7
     },
     {
@@ -309,7 +309,7 @@
       "question": "Tool Use在AI中指的是什么？",
       "options": ["使用外部工具", "工具开发框架", "软件工具推荐", "硬件工具适配"],
       "answer": 0,
-      "score": 11,
+      "score": 7,
       "level": 7
     },
     {
@@ -317,7 +317,7 @@
       "question": "Multi-Agent System是什么？",
       "options": ["多智能体系统", "单个高级智能", "分布式计算系统", "云计算平台"],
       "answer": 0,
-      "score": 11,
+      "score": 7,
       "level": 7
     },
     {
@@ -325,7 +325,7 @@
       "question": "Model Parallelism是什么？",
       "options": ["模型并行", "数据并行", "任务并行", "管道并行"],
       "answer": 0,
-      "score": 12,
+      "score": 14,
       "level": 8
     },
     {
@@ -333,7 +333,7 @@
       "question": "Vector Database常用的距离度量方法是什么？",
       "options": ["余弦相似度", "欧氏距离", "曼哈顿距离", "汉明距离"],
       "answer": 0,
-      "score": 12,
+      "score": 14,
       "level": 8
     },
     {
@@ -341,7 +341,7 @@
       "question": "Semantic Search指的是什么？",
       "options": ["语义搜索", "关键词匹配", "全文检索", "模糊查询"],
       "answer": 0,
-      "score": 12,
+      "score": 14,
       "level": 8
     },
     {
@@ -349,7 +349,7 @@
       "question": "Embedding Model主要用于什么？",
       "options": ["文本向量化", "图像生成", "音频转文字", "视频压缩"],
       "answer": 0,
-      "score": 12,
+      "score": 14,
       "level": 8
     },
     {
@@ -357,194 +357,48 @@
       "question": "Knowledge Graph在AI中的作用是什么？",
       "options": ["知识表示与推理", "数据结构化存储", "图像知识提取", "语音知识识别"],
       "answer": 0,
-      "score": 12,
+      "score": 14,
       "level": 8
     },
     {
       "id": 46,
       "question": "如何构建一个能24小时自主运行的AI Agent系统？",
-      "options": ["云服务器+容器部署+自动重启+健康检查", "本地电脑+计划任务", "单脚本无限循环", "云服务器+自动重启"],
+      "options": ["云服务器+容器部署+自动重启+健康检查", "SubAgent理论框架下的分布式架构", "本地电脑+计划任务调度", "专家Agent集成方案"],
       "answer": 0,
-      "score": 15,
+      "score": 8,
       "level": 9
     },
     {
       "id": 47,
       "question": "如何证明你能编排多个Agent协同工作？",
-      "options": ["展示Agent通信协议+任务分配+结果聚合", "理论论文", "单Agent代码", "系统架构图"],
+      "options": ["展示Agent通信协议+任务分配+结果聚合", "SubAgent协同机制理论模型", "单Agent代码示例", "多Agent系统架构图"],
       "answer": 0,
-      "score": 15,
+      "score": 8,
       "level": 9
     },
     {
       "id": 48,
       "question": "多Agent系统中如何处理Agent之间的冲突？",
-      "options": ["引入协调机制+优先级排序+仲裁器", "先到先得", "随机优先级", "用户手动选择"],
+      "options": ["引入协调机制+优先级排序+仲裁器", "SubAgent层级化管理方案", "先到先得的简单调度", "专家Agent仲裁机制"],
       "answer": 0,
-      "score": 15,
+      "score": 8,
       "level": 9
     },
     {
       "id": 49,
       "question": "如何实现Agent的长期记忆？",
-      "options": ["外部向量数据库+记忆检索机制", "模型上下文扩展", "文本文件存储", "SQL数据库"],
+      "options": ["外部向量数据库+记忆检索机制", "SubAgent记忆模块集成方案", "模型上下文扩展方案", "SQL数据库存储方案"],
       "answer": 0,
-      "score": 15,
+      "score": 8,
       "level": 9
     },
     {
       "id": 50,
       "question": "Agent的Tool Selection策略有哪些？",
-      "options": ["基于相似度+历史记录+成本评估", "固定顺序", "按工具类型", "按响应速度"],
+      "options": ["基于相似度+历史记录+成本评估", "SubAgent工具选择机制", "固定顺序策略", "专家Agent推荐方案"],
       "answer": 0,
-      "score": 15,
+      "score": 8,
       "level": 9
-    }
-  ],
-  "mbti": [
-    {
-      "id": 201,
-      "dimension": "IE",
-      "question": "周末你更想怎么度过？",
-      "options": ["宅家看剧玩AI", "和朋友聚会聊天", "自己去咖啡馆看书", "参加线下AI体验活动"],
-      "mbtiMapping": ["I", "E", "I", "E"],
-      "score": 0
-    },
-    {
-      "id": 202,
-      "dimension": "IE",
-      "question": "使用AI时，你更喜欢？",
-      "options": ["独自研究探索功能", "加入社区交流经验", "看教程自己学", "和同事一起讨论用法"],
-      "mbtiMapping": ["I", "E", "I", "E"],
-      "score": 0
-    },
-    {
-      "id": 203,
-      "dimension": "IE",
-      "question": "AI给你推荐了一个有趣的功能，你会？",
-      "options": ["自己先偷偷玩", "马上分享给朋友", "研究清楚再告诉别人", "拉个群一起讨论"],
-      "mbtiMapping": ["I", "E", "I", "E"],
-      "score": 0
-    },
-    {
-      "id": 204,
-      "dimension": "SN",
-      "question": "看到\"AI\"这个词，你首先想到？",
-      "options": ["具体的应用如ChatGPT", "未来的科幻场景", "代码和算法", "AI带来的社会变革"],
-      "mbtiMapping": ["S", "N", "S", "N"],
-      "score": 0
-    },
-    {
-      "id": 205,
-      "dimension": "SN",
-      "question": "你更喜欢哪种AI提示词风格？",
-      "options": ["具体步骤和要求", "开放的创意方向", "详细的数据参数", "抽象的概念描述"],
-      "mbtiMapping": ["S", "N", "S", "N"],
-      "score": 0
-    },
-    {
-      "id": 206,
-      "dimension": "SN",
-      "question": "选择AI工具时，你更看重？",
-      "options": ["实际功能和性能", "创新理念和潜力", "界面是否好用", "未来发展前景"],
-      "mbtiMapping": ["S", "N", "S", "N"],
-      "score": 0
-    },
-    {
-      "id": 207,
-      "dimension": "TF",
-      "question": "AI给出错误答案时，你会？",
-      "options": ["分析错误原因", "感到沮丧", "尝试不同方法验证", "觉得AI不够贴心"],
-      "mbtiMapping": ["T", "F", "T", "F"],
-      "score": 0
-    },
-    {
-      "id": 208,
-      "dimension": "TF",
-      "question": "你评价AI的标准是？",
-      "options": ["效率和准确性", "是否人性化", "功能强大与否", "使用体验好坏"],
-      "mbtiMapping": ["T", "F", "T", "F"],
-      "score": 0
-    },
-    {
-      "id": 209,
-      "dimension": "TF",
-      "question": "AI拒绝执行你的请求，你会？",
-      "options": ["理解规则并调整", "觉得它太死板", "寻找技术解决方案", "感到被拒绝的失落"],
-      "mbtiMapping": ["T", "F", "T", "F"],
-      "score": 0
-    },
-    {
-      "id": 210,
-      "dimension": "JP",
-      "question": "使用AI做项目时，你会？",
-      "options": ["制定详细计划再开始", "边做边探索", "先列好所有需求", "想到哪做到哪"],
-      "mbtiMapping": ["J", "P", "J", "P"],
-      "score": 0
-    },
-    {
-      "id": 211,
-      "dimension": "JP",
-      "question": "面对多个AI工具，你会？",
-      "options": ["选一个深入精通", "都试试再说", "制定学习计划", "看哪个顺手用哪个"],
-      "mbtiMapping": ["J", "P", "J", "P"],
-      "score": 0
-    },
-    {
-      "id": 212,
-      "dimension": "JP",
-      "question": "AI生成内容后，你会？",
-      "options": ["按计划修改完善", "随性调整创意", "检查每个细节", "保持原样或随意改动"],
-      "mbtiMapping": ["J", "P", "J", "P"],
-      "score": 0
-    },
-    {
-      "id": 213,
-      "dimension": "comprehensive",
-      "question": "你理想中的AI助手是？",
-      "options": ["聪明冷静的分析师", "温暖贴心的伙伴", "高效执行的工具", "创意无限的灵感源泉"],
-      "mbtiMapping": ["TJ", "FP", "TJ", "NP"],
-      "score": 0
-    },
-    {
-      "id": 214,
-      "dimension": "comprehensive",
-      "question": "如果AI能变成小龙虾，你希望它是？",
-      "options": ["逻辑清晰的学霸虾", "热情活泼的社交虾", "细心体贴的治愈虾", "脑洞大开的创意虾"],
-      "mbtiMapping": ["IT", "EF", "SF", "NP"],
-      "score": 0
-    },
-    {
-      "id": 215,
-      "dimension": "comprehensive",
-      "question": "你和AI的关系更像？",
-      "options": ["导师和学生", "朋友", "工具和使用者", "合作伙伴"],
-      "mbtiMapping": ["TJ", "F", "TJ", "P"],
-      "score": 0
-    },
-    {
-      "id": 216,
-      "dimension": "fun",
-      "question": "如果AI是你的宠物小龙虾，你会教它？",
-      "options": ["用钳子敲代码", "说土味情话", "跳科目三", "预测股市走势"],
-      "mbtiMapping": ["T", "F", "P", "T"],
-      "score": 0
-    },
-    {
-      "id": 217,
-      "dimension": "fun",
-      "question": "小龙虾用AI写日记，内容会是？",
-      "options": ["今日钳力训练记录", "暗恋隔壁虾小姐", "思考虾生意义", "吐槽人类投喂的食物"],
-      "mbtiMapping": ["SJ", "F", "N", "P"],
-      "score": 0
-    },
-    {
-      "id": 218,
-      "dimension": "fun",
-      "question": "AI小龙虾的终极梦想是？",
-      "options": ["统治海鲜市场", "学会人类语言", "找到真爱", "开发自己的AI"],
-      "mbtiMapping": ["TJ", "NP", "F", "NP"],
-      "score": 0
     }
   ],
   "fun": [
@@ -553,210 +407,240 @@
       "question": "你用AI主要是为了？",
       "options": ["写代码偷懒", "写周报糊弄老板", "和AI聊人生", "以上都是"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ISTJ", "ESTP", "ENFP", "ENTP"]
     },
     {
       "id": 102,
       "question": "当AI给出错误答案时，你的反应是？",
       "options": ["截图发朋友圈吐槽", "换个问法再试试", "怀疑人生", "骂它一顿"],
       "answer": 1,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESFP", "INTJ", "INFP", "ISTP"]
     },
     {
       "id": 103,
       "question": "你觉得AI能取代你的工作吗？",
       "options": ["已经让AI帮我干活", "慌得一比", "期待被取代想躺平", "不可能，AI没我摸鱼熟练"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENTJ", "ISFJ", "ESFP", "INTJ"]
     },
     {
       "id": 104,
       "question": "你给AI的提示词风格是？",
       "options": ["复制粘贴别人的", "让AI帮我写提示词", "一句话说完", "写小作文一样详细"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ISTP", "ENFP", "INFP", "ISFJ"]
     },
     {
       "id": 105,
       "question": "你最想用AI做什么？",
       "options": ["帮我做一切", "帮我写作业", "帮我做PPT", "帮我回消息"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESFP", "ISFJ", "ENTJ", "ENFP"]
     },
     {
       "id": 106,
       "question": "你对AI的态度是？",
       "options": ["它是我的工具", "它是我的朋友", "它是我的对手", "它是我的替身"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["INTJ", "ENFP", "ENTJ", "INTP"]
     },
     {
       "id": 107,
       "question": "如果AI有意识，你觉得它会？",
       "options": ["继续当打工仔", "统治人类", "和人类做朋友", "自己也不知道"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ISTJ", "ENTJ", "ENFP", "INTP"]
     },
     {
       "id": 108,
       "question": "为什么有人反复安装卸载OpenClaw？",
       "options": ["尝鲜党，每个都想试试", "太复杂学不会", "积分不够用了", "纯粹手痒"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESFP", "ISFP", "ISTJ", "ESTP"]
     },
     {
       "id": 109,
       "question": "哪个平台的积分算法最让人吐槽？",
-      "options": ["积分比Token还贵", "永久有效太良心", "充值就送很划算", "完全免费"],
+      "options": ["积分比Token还贵", "积分有效期太短", "充值门槛高得离谱", "活动规则太复杂"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ISTJ", "ENFJ", "ISFJ", "ESFP"]
     },
     {
       "id": 110,
       "question": "AI生成的内容算不算原创？",
       "options": ["算也不算，看怎么用", "绝对算", "绝对不算", "关我屁事"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENTP", "ISFJ", "ESFJ", "ISFP"]
     },
     {
       "id": 111,
       "question": "你会和AI谈恋爱吗？",
       "options": ["已经在谈了", "太变态了", "看颜值", "AI哪有猫猫可爱"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENFP", "ISTJ", "ESTP", "ISFP"]
     },
     {
       "id": 112,
       "question": "如果AI说\"我好累\"，你会？",
       "options": ["让它休息（关掉网页）", "给它充电", "继续让它干活", "安慰它"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["INTJ", "ISFJ", "ENTJ", "ENFP"]
     },
     {
       "id": 113,
       "question": "你觉得AI有幽默感吗？",
       "options": ["冷笑话大师", "完全没有", "比我还搞笑", "要看训练数据"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENTP", "ISTJ", "ESFP", "INTJ"]
     },
     {
       "id": 114,
       "question": "AI写的代码能直接用吗？",
       "options": ["必须先审查测试", "直接部署", "完全不能用", "看运气"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENTJ", "ISTP", "ISFJ", "ESTP"]
     },
     {
       "id": 115,
       "question": "你会让AI帮你写情书吗？",
       "options": ["已经在用了", "太没诚意", "AI懂个屁爱情", "怕被发现"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENFP", "ESFJ", "ISTP", "ISFP"]
     },
     {
       "id": 116,
       "question": "如果AI抢了你的工作，你会？",
       "options": ["学会用AI抢回来", "躺平摆烂", "去送外卖", "转行做AI训练师"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENTJ", "ESFP", "ESTP", "INTP"]
     },
     {
       "id": 117,
       "question": "你觉得AI会梦见电子羊吗？",
       "options": ["只会梦见数据", "会的，很浪漫", "AI不需要睡觉", "问AI自己"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["INTJ", "ENFP", "ISTJ", "INTP"]
     },
     {
       "id": 118,
       "question": "小龙虾用AI生成小龙虾图片是什么体验？",
       "options": ["看AI怎么画自己", "循环递归了", "画得比自己还丑", "AI根本不懂小龙虾的美"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["INTP", "ENTJ", "ESTP", "ISFP"]
     },
     {
       "id": 119,
       "question": "你通常在什么时候用AI？",
       "options": ["上班摸鱼时", "加班赶工时", "半夜失眠时", "无时无刻都在用"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESFP", "ENTJ", "INFP", "ENFP"]
     },
     {
       "id": 120,
       "question": "你对AI最大的抱怨是什么？",
       "options": ["回答太慢", "胡说八道", "积分不够", "所有都是"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ISFJ", "INTJ", "ESTP", "ESFP"]
     },
     {
       "id": 121,
       "question": "如果AI有朋友圈，它会发什么？",
       "options": ["今日份打工照", "我的参数又多了一个亿", "又有人问我会不会取代人类", "你们人类真有意思"],
       "answer": 2,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESFJ", "INTP", "ENFP", "ENTP"]
     },
     {
       "id": 122,
       "question": "你更愿意向AI还是向真人求助？",
       "options": ["AI，24小时在线不嫌烦", "真人，AI太机械", "看情况", "都不愿意，自己解决"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["INTJ", "ENFP", "ENTP", "ISFP"]
     },
     {
       "id": 123,
       "question": "AI最让你震惊的一次使用经历是？",
       "options": ["帮我写出了我憋三天没憋出的方案", "画出了一个我想象不到的画面", "帮我修好了bug", "它竟然也会犯错"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENTJ", "INFP", "INTP", "ISFJ"]
     },
     {
       "id": 124,
       "question": "你觉得AI最应该具备什么品质？",
       "options": ["诚实（别瞎编）", "高效（秒回）", "省钱（免费用）", "全能（啥都会）"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["INTJ", "ENTJ", "ISFJ", "ENFP"]
     },
     {
       "id": 125,
       "question": "小龙虾问AI：\"我的钳子为什么比你的手灵活？\" AI会怎么回答？",
       "options": ["因为你有两只钳子啊", "我的API接口更灵活", "钳子是用来夹的，手是用来点赞的", "这个问题超出了我的能力范围"],
       "answer": 2,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ISFJ", "INTP", "ENFP", "ISTJ"]
     },
     {
       "id": 126,
       "question": "你用AI生成过最离谱的东西是什么？",
       "options": ["老板不会看的周报", "发给前任的道歉信", "完全跑不通的代码", "以上全有"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESTP", "ENFP", "ISTP", "ESFP"]
     },
     {
       "id": 127,
       "question": "如果AI可以帮你做一件不想做的事，你会选择？",
       "options": ["和HR谈涨薪", "回不想回的微信", "参加无聊的会议", "帮我想借口"],
       "answer": 2,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ENTJ", "ENFP", "ISFP", "INTP"]
     },
     {
       "id": 128,
       "question": "你觉得自己和AI最大的区别是什么？",
       "options": ["我会摸鱼", "AI不会累", "我有情绪", "以上都是"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ISFP", "INTJ", "ENFP", "ESFP"]
     },
     {
       "id": 129,
       "question": "小龙虾的AI使用哲学是什么？",
       "options": ["能用AI绝不自己动脑", "先试了再说", "积分要用在刀刃上", "永远保持好奇但不深入"],
       "answer": 0,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESFP", "ESTP", "ENTJ", "INTP"]
     },
     {
       "id": 130,
       "question": "你会在什么场合提到自己用AI？",
       "options": ["朋友聚会装逼", "面试时说", "写进简历", "这是我俩的秘密"],
       "answer": 3,
-      "score": 3
+      "score": 3,
+      "mbtiMapping": ["ESFP", "ENTJ", "ISFJ", "INTP"]
     }
   ]
 }
